@@ -1,4 +1,4 @@
-# movie-suggestion-engine
+# movie-recommender-system
 
 A content-based movie recommendation engine leveraging movie metadata and cosine similarity to deliver personalized suggestions.
 
