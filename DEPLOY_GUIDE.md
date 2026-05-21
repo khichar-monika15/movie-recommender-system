@@ -111,9 +111,14 @@ The push will take a few minutes because of LFS (large files). Wait for it to fi
    - **Repository**: `khichar-monika15/movie-recommender-system`
    - **Branch**: `main`
    - **Main file path**: `app.py`
-4. Click **Deploy**.
-5. Wait ~2 minutes. It installs requirements and launches.
-6. You get a public URL like `https://khichar-monika15-movie-recommender-system-app-xxxx.streamlit.app`.
+4. Before clicking Deploy, click **Advanced settings** → **Secrets**. Paste this:
+   ```toml
+   TMDB_KEY = "8265bd1679663a7ea12ac168da84d2e8"
+   ```
+   This keeps the API key out of the code.
+5. Click **Deploy**.
+6. Wait ~2 minutes. It installs requirements and launches.
+7. You get a public URL like `https://khichar-monika15-movie-recommender-system-app-xxxx.streamlit.app`.
 
 **Test it**: Type "Dhurandhar 2" in the search box → click Show Recommendations → it should show a spinner then 5 results.
 

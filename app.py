@@ -4,7 +4,7 @@ import requests
 import streamlit as st
 from sklearn.metrics.pairwise import cosine_similarity
 
-TMDB_KEY = st.secrets.get("TMDB_KEY", "8265bd1679663a7ea12ac168da84d2e8")
+TMDB_KEY = st.secrets["TMDB_KEY"]
 MODEL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "model")
 
 
